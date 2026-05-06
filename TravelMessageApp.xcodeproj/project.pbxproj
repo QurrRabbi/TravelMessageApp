@@ -13,14 +13,22 @@
 		2A1376FD75375997BDCAE205 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769D32C11782376D71ABAF /* Message.swift */; };
 		48C2EEC0F5547156CD073BD9 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B38E4FD62AF97A602068A /* Journey.swift */; };
 		6209279501448AFBDF71A9E9 /* EncryptionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B38529263B76E48088E083 /* EncryptionServiceTests.swift */; };
+		6433AD46DA9511FA17787423 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20026754AA56075446C853B4 /* AuthViewModel.swift */; };
+		767F1EAF2FBBB53B487E63ED /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113E0A405D9B97F54960E0C /* AuthService.swift */; };
 		84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078DCA370D45FDB442F5056 /* SceneDelegate.swift */; };
 		8A374389FAE29BF2D56B2ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105510AAF7BDD230BB414C0 /* AppDelegate.swift */; };
 		92818FD2BBE4101D24AA7959 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C24BF254B7C76B9C7696F /* LocationService.swift */; };
+		A757DCFAC786ECA75F89A61B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DC30BC707A96E2C54F1C7 /* LoginView.swift */; };
 		A823D400696BC859E088E996 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B9509F7C3D9AA1348E6A /* User.swift */; };
+		AC7681FA9BA4542BC1419D5F /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CBE3038439330C0EC4B949 /* MockAuthService.swift */; };
+		AE3B337D009498A16C6144C0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FF18B1E1BBA41587F8807819 /* GoogleSignIn */; };
 		AEB41E201276A96747258D7E /* JourneyRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08052667B6FDD9A11248F839 /* JourneyRepositoryTests.swift */; };
 		B0DB51DE1977F00E4150907C /* MessageAccessIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E0771CF23B0BFB7B4CC8D5 /* MessageAccessIntegrationTests.swift */; };
+		C73CDAB301D19B810F9312E3 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3199581573A0F0500BB2ED59 /* GoogleSignInSwift */; };
 		CAF9B2C2655FE3A4C6F4239D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46705B7E5EB0F765BBDAE8 /* APIService.swift */; };
 		D537DA180D8ACEA69CF65A49 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6C9A67F87931AD8D0A8ED3 /* AuthViewModelTests.swift */; };
+		EC8CF25CBC77AA14F9659311 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770E8B1294023AA76F79DDF /* AuthCoordinator.swift */; };
+		EDD7EA4E4319F722E0C326FD /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D3A58083AB29BA1D11DF1 /* KeychainService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +54,9 @@
 		13275D85AAD4FCA3D56319CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		177B38E4FD62AF97A602068A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		1F46705B7E5EB0F765BBDAE8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		20026754AA56075446C853B4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2078DCA370D45FDB442F5056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		234DC30BC707A96E2C54F1C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		300E468502541BFCE9BDD6CE /* TravelMessageAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelMessageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A2A3BD5F696558B199A208 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
 		5105510AAF7BDD230BB414C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,16 +65,36 @@
 		70B38529263B76E48088E083 /* EncryptionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionServiceTests.swift; sourceTree = "<group>"; };
 		73E0771CF23B0BFB7B4CC8D5 /* MessageAccessIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAccessIntegrationTests.swift; sourceTree = "<group>"; };
 		AA81A6B60319E9CF6FC8E503 /* TravelMessageAppIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelMessageAppIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CBE3038439330C0EC4B949 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		BC49B9509F7C3D9AA1348E6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7896E839483BD9D19722053 /* TravelMessageApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TravelMessageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6C9A67F87931AD8D0A8ED3 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
+		F113E0A405D9B97F54960E0C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F64D3A58083AB29BA1D11DF1 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		F6769D32C11782376D71ABAF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F770E8B1294023AA76F79DDF /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA143AC3D17E7E376F76F7E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3B337D009498A16C6144C0 /* GoogleSignIn in Frameworks */,
+				C73CDAB301D19B810F9312E3 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2397B3D9EFEDC1E95B581899 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				BDE5C489E39AE211AF0CE7EE /* Coordinators */,
+				B70DA933BAAA9FAAD7DF9FFA /* Services */,
+				A6172CA460993DB836D2E3F5 /* ViewModels */,
+				9589738DEBC3C4811744606C /* Views */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -128,6 +158,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		9589738DEBC3C4811744606C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				234DC30BC707A96E2C54F1C7 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A08EF7DCED25F74DBB3F00E3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +174,14 @@
 				B01B258EFA45FBFFCB00DE94 /* Services */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		A6172CA460993DB836D2E3F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20026754AA56075446C853B4 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A90E4295D43654E91E317035 /* Models */ = {
@@ -171,6 +217,7 @@
 			children = (
 				1F46705B7E5EB0F765BBDAE8 /* APIService.swift */,
 				43A2A3BD5F696558B199A208 /* EncryptionService.swift */,
+				F64D3A58083AB29BA1D11DF1 /* KeychainService.swift */,
 				6C7C24BF254B7C76B9C7696F /* LocationService.swift */,
 			);
 			path = Services;
@@ -186,9 +233,26 @@
 			path = Unit;
 			sourceTree = "<group>";
 		};
+		B70DA933BAAA9FAAD7DF9FFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F113E0A405D9B97F54960E0C /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDE5C489E39AE211AF0CE7EE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F770E8B1294023AA76F79DDF /* AuthCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		D25C5554480D305ADBA6D7EF /* TravelMessageAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				DF21DB62D30CA6583864FE9C /* Mocks */,
 				B07226908094A90BE62CBB5E /* Unit */,
 			);
 			path = TravelMessageAppTests;
@@ -209,6 +273,14 @@
 				2078DCA370D45FDB442F5056 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DF21DB62D30CA6583864FE9C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B7CBE3038439330C0EC4B949 /* MockAuthService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		F114F8D238355F5218FF8CA8 /* Message */ = {
@@ -264,6 +336,7 @@
 			buildConfigurationList = 53D732686ACF9528FF5C8724 /* Build configuration list for PBXNativeTarget "TravelMessageApp" */;
 			buildPhases = (
 				4C136D7D33C410051690EF5B /* Sources */,
+				DA143AC3D17E7E376F76F7E3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +344,8 @@
 			);
 			name = TravelMessageApp;
 			packageProductDependencies = (
+				FF18B1E1BBA41587F8807819 /* GoogleSignIn */,
+				3199581573A0F0500BB2ED59 /* GoogleSignInSwift */,
 			);
 			productName = TravelMessageApp;
 			productReference = C7896E839483BD9D19722053 /* TravelMessageApp.app */;
@@ -314,6 +389,9 @@
 			);
 			mainGroup = 944D6E269679782157887693;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C0CBB81D9C2B6A48BFFD23C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4260DC46B2FCEA735D81D910 /* Products */;
 			projectDirPath = "";
@@ -341,10 +419,15 @@
 			files = (
 				CAF9B2C2655FE3A4C6F4239D /* APIService.swift in Sources */,
 				8A374389FAE29BF2D56B2ED1 /* AppDelegate.swift in Sources */,
+				EC8CF25CBC77AA14F9659311 /* AuthCoordinator.swift in Sources */,
+				767F1EAF2FBBB53B487E63ED /* AuthService.swift in Sources */,
+				6433AD46DA9511FA17787423 /* AuthViewModel.swift in Sources */,
 				06B9055147883A8DFA7346FA /* EncryptionService.swift in Sources */,
 				48C2EEC0F5547156CD073BD9 /* Journey.swift in Sources */,
 				002BBD25F3C8754CB3455C1C /* JourneyRepository.swift in Sources */,
+				EDD7EA4E4319F722E0C326FD /* KeychainService.swift in Sources */,
 				92818FD2BBE4101D24AA7959 /* LocationService.swift in Sources */,
+				A757DCFAC786ECA75F89A61B /* LoginView.swift in Sources */,
 				2A1376FD75375997BDCAE205 /* Message.swift in Sources */,
 				1FD6AA9C9A8A2F17439E886B /* MessageRepository.swift in Sources */,
 				84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */,
@@ -359,6 +442,7 @@
 				D537DA180D8ACEA69CF65A49 /* AuthViewModelTests.swift in Sources */,
 				6209279501448AFBDF71A9E9 /* EncryptionServiceTests.swift in Sources */,
 				AEB41E201276A96747258D7E /* JourneyRepositoryTests.swift in Sources */,
+				AC7681FA9BA4542BC1419D5F /* MockAuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +725,30 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0CBB81D9C2B6A48BFFD23C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3199581573A0F0500BB2ED59 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0CBB81D9C2B6A48BFFD23C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		FF18B1E1BBA41587F8807819 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0CBB81D9C2B6A48BFFD23C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 972C6FFA66686041459C0D88 /* Project object */;
 }

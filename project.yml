@@ -6,6 +6,11 @@ options:
   xcodeVersion: "15.0"
   createIntermediateGroups: true
 
+packages:
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    from: "7.0.0"
+
 settings:
   base:
     SWIFT_VERSION: "5.9"
@@ -22,6 +27,11 @@ targets:
       - path: TravelMessageApp/Resources
     info:
       path: TravelMessageApp/Resources/Info.plist
+    dependencies:
+      - package: GoogleSignIn
+        product: GoogleSignIn
+      - package: GoogleSignIn
+        product: GoogleSignInSwift
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.app
@@ -37,6 +47,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.tests
+        GENERATE_INFOPLIST_FILE: YES
 
   TravelMessageAppIntegrationTests:
     type: bundle.unit-test
@@ -48,6 +59,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.integrationtests
+        GENERATE_INFOPLIST_FILE: YES
 
 schemes:
   TravelMessageApp:
