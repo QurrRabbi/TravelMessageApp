@@ -1,0 +1,69 @@
+name: TravelMessageApp
+options:
+  bundleIdPrefix: com.travelmessageapp
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  TravelMessageApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: TravelMessageApp
+    resources:
+      - path: TravelMessageApp/Resources
+    info:
+      path: TravelMessageApp/Resources/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.app
+        INFOPLIST_FILE: TravelMessageApp/Resources/Info.plist
+
+  TravelMessageAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: TravelMessageAppTests
+    dependencies:
+      - target: TravelMessageApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.tests
+
+  TravelMessageAppIntegrationTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: TravelMessageAppIntegrationTests
+    dependencies:
+      - target: TravelMessageApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.integrationtests
+
+schemes:
+  TravelMessageApp:
+    build:
+      targets:
+        TravelMessageApp: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - TravelMessageAppTests
+        - TravelMessageAppIntegrationTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: TravelMessageApp backend infrastructure
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 30
+    MemorySize: 256
+    Environment:
+      Variables:
+        REGION: eu-west-2
+
+Resources:
+  AuthFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../lambdas/auth/
+      Handler: handler.lambda_handler
+      Events:
+        AuthApi:
+          Type: Api
+          Properties:
+            Path: /auth
+            Method: post
+
+  MessagesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../lambdas/messages/
+      Handler: handler.lambda_handler
+      Events:
+        GetMessages:
+          Type: Api
+          Properties:
+            Path: /messages
+            Method: get
+        PostMessage:
+          Type: Api
+          Properties:
+            Path: /messages
+            Method: post
+        DeleteMessage:
+          Type: Api
+          Properties:
+            Path: /messages/{id}
+            Method: delete
+
+  JourneysFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../lambdas/journeys/
+      Handler: handler.lambda_handler
+      Events:
+        GetJourneys:
+          Type: Api
+          Properties:
+            Path: /journeys
+            Method: get
+        PostJourney:
+          Type: Api
+          Properties:
+            Path: /journeys
+            Method: post
+        DeleteJourney:
+          Type: Api
+          Properties:
+            Path: /journeys/{id}
+            Method: delete
+
+  GeolocationFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../lambdas/geolocation/
+      Handler: handler.lambda_handler
+      Events:
+        ValidateProximity:
+          Type: Api
+          Properties:
+            Path: /geolocation/validate
+            Method: post
+
+  MessagesBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: travelmessageapp-media-eu-west-2
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: aws:kms
