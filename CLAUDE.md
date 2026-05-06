@@ -16,7 +16,7 @@ TravelMessageApp is a mobile application for travellers to record and share thei
 - **Backend:** Server-based architecture using AWS Lambda functions and S3 buckets for storage
 - **Geolocation:** Messages are tagged with precise geolocation coordinates and access is gated by proximity validation
 - **Encryption:** Links shared with friends are AES end-to-end encrypted and location-locked
-- **AWS Region:** EU (eu-west-1 or eu-central-1 — confirm before provisioning)
+- **AWS Region:** eu-west-2 (London)
 - **Proximity Threshold:** Friends must be within **50 metres** of the tagged location to unlock a message
 
 ## Important Conventions and Patterns
@@ -38,4 +38,4 @@ TravelMessageApp is a mobile application for travellers to record and share thei
 - **Check-in code:** Always ask before committing and pushing code to the repository
 - **Geolocation sensitivity:** Proximity threshold is **50 metres** — the app must validate the friend's real-time location is within this radius before decrypting and displaying the message
 - **Encryption:** AES end-to-end encryption is required for all message content and shared links. Keys must never be stored server-side in plaintext
-- **AWS Region:** All infrastructure must be provisioned in the EU region (confirm eu-west-1 vs eu-central-1 before provisioning)
+- **AWS Region:** All infrastructure must be provisioned in **eu-west-2 (London)**
