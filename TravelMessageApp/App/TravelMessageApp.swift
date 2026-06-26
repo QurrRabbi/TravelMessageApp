@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 
 @main
@@ -10,9 +11,22 @@ struct TravelMessageMainApp: App {
         )
     )
 
+    // True only when this process is the host app for an XCTest bundle. XCTest
+    // sets this environment variable for the test host; it is never present in a
+    // normal (debug or release) launch, so the real UI always boots outside tests.
+    private var isRunningUnitTests: Bool {
+        ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+    }
+
     var body: some Scene {
         WindowGroup {
-            RootView(viewModel: authViewModel)
+            if isRunningUnitTests {
+                // Avoid booting the full sign-in UI in the unit-test host;
+                // the tests exercise the logic layer directly.
+                EmptyView()
+            } else {
+                RootView(viewModel: authViewModel)
+            }
         }
     }
 }

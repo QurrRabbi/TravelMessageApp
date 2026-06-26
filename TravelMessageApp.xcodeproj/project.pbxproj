@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		002BBD25F3C8754CB3455C1C /* JourneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A447A64E6FD26C7FABB7E0 /* JourneyRepository.swift */; };
 		06B9055147883A8DFA7346FA /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2A3BD5F696558B199A208 /* EncryptionService.swift */; };
+		1FAF59010263C03181046B62 /* MessageRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2706768F99871EB8A389D /* MessageRepositoryTests.swift */; };
 		1FD6AA9C9A8A2F17439E886B /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBE346DF3D589E0F9391FB /* MessageRepository.swift */; };
 		2A1376FD75375997BDCAE205 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769D32C11782376D71ABAF /* Message.swift */; };
 		3BA52C26C925C381A1EBA351 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C25CE94DD029966025380 /* RootView.swift */; };
@@ -20,6 +21,7 @@
 		84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078DCA370D45FDB442F5056 /* SceneDelegate.swift */; };
 		8A374389FAE29BF2D56B2ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105510AAF7BDD230BB414C0 /* AppDelegate.swift */; };
 		92818FD2BBE4101D24AA7959 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C24BF254B7C76B9C7696F /* LocationService.swift */; };
+		9FE2A73659992E09BD880F5E /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9117CBF83AF96019A05FBD /* MockAPIService.swift */; };
 		A757DCFAC786ECA75F89A61B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DC30BC707A96E2C54F1C7 /* LoginView.swift */; };
 		A823D400696BC859E088E996 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B9509F7C3D9AA1348E6A /* User.swift */; };
 		AC7681FA9BA4542BC1419D5F /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CBE3038439330C0EC4B949 /* MockAuthService.swift */; };
@@ -52,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		00A447A64E6FD26C7FABB7E0 /* JourneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepository.swift; sourceTree = "<group>"; };
+		07F2706768F99871EB8A389D /* MessageRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepositoryTests.swift; sourceTree = "<group>"; };
 		08052667B6FDD9A11248F839 /* JourneyRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepositoryTests.swift; sourceTree = "<group>"; };
 		177B38E4FD62AF97A602068A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		1F46705B7E5EB0F765BBDAE8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		B7CBE3038439330C0EC4B949 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		BC49B9509F7C3D9AA1348E6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7896E839483BD9D19722053 /* TravelMessageApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TravelMessageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9117CBF83AF96019A05FBD /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		DF6C9A67F87931AD8D0A8ED3 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
 		F113E0A405D9B97F54960E0C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F64D3A58083AB29BA1D11DF1 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 		DF21DB62D30CA6583864FE9C /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				CD9117CBF83AF96019A05FBD /* MockAPIService.swift */,
 				B7CBE3038439330C0EC4B949 /* MockAuthService.swift */,
 			);
 			path = Mocks;
@@ -284,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				70B38529263B76E48088E083 /* EncryptionServiceTests.swift */,
+				07F2706768F99871EB8A389D /* MessageRepositoryTests.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -440,6 +446,8 @@
 				D537DA180D8ACEA69CF65A49 /* AuthViewModelTests.swift in Sources */,
 				6209279501448AFBDF71A9E9 /* EncryptionServiceTests.swift in Sources */,
 				AEB41E201276A96747258D7E /* JourneyRepositoryTests.swift in Sources */,
+				1FAF59010263C03181046B62 /* MessageRepositoryTests.swift in Sources */,
+				9FE2A73659992E09BD880F5E /* MockAPIService.swift in Sources */,
 				AC7681FA9BA4542BC1419D5F /* MockAuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
