@@ -18,7 +18,6 @@
 		6209279501448AFBDF71A9E9 /* EncryptionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B38529263B76E48088E083 /* EncryptionServiceTests.swift */; };
 		6433AD46DA9511FA17787423 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20026754AA56075446C853B4 /* AuthViewModel.swift */; };
 		767F1EAF2FBBB53B487E63ED /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113E0A405D9B97F54960E0C /* AuthService.swift */; };
-		84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078DCA370D45FDB442F5056 /* SceneDelegate.swift */; };
 		8A374389FAE29BF2D56B2ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105510AAF7BDD230BB414C0 /* AppDelegate.swift */; };
 		92818FD2BBE4101D24AA7959 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C24BF254B7C76B9C7696F /* LocationService.swift */; };
 		9FE2A73659992E09BD880F5E /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9117CBF83AF96019A05FBD /* MockAPIService.swift */; };
@@ -59,7 +58,6 @@
 		177B38E4FD62AF97A602068A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		1F46705B7E5EB0F765BBDAE8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		20026754AA56075446C853B4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		2078DCA370D45FDB442F5056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		234DC30BC707A96E2C54F1C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		300E468502541BFCE9BDD6CE /* TravelMessageAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelMessageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A2A3BD5F696558B199A208 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 			children = (
 				5105510AAF7BDD230BB414C0 /* AppDelegate.swift */,
 				B08C25CE94DD029966025380 /* RootView.swift */,
-				2078DCA370D45FDB442F5056 /* SceneDelegate.swift */,
 				93CC2325FB217E7446ABA1C3 /* TravelMessageApp.swift */,
 			);
 			path = App;
@@ -433,7 +430,6 @@
 				2A1376FD75375997BDCAE205 /* Message.swift in Sources */,
 				1FD6AA9C9A8A2F17439E886B /* MessageRepository.swift in Sources */,
 				3BA52C26C925C381A1EBA351 /* RootView.swift in Sources */,
-				84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */,
 				3D85BBAD48DC99DBD835CEB3 /* TravelMessageApp.swift in Sources */,
 				A823D400696BC859E088E996 /* User.swift in Sources */,
 			);
