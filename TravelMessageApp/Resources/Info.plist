@@ -18,5 +18,11 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>TravelMessageApp uses your location to tag messages and unlock geo-locked messages from friends.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>TravelMessageApp uses your photo library to attach photos to messages.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>TravelMessageApp uses your camera to capture photos for messages.</string>
 </dict>
 </plist>

@@ -23,10 +23,14 @@ targets:
     platform: iOS
     sources:
       - path: TravelMessageApp
-    resources:
-      - path: TravelMessageApp/Resources
+        excludes:
+          - Resources/Info.plist
     info:
       path: TravelMessageApp/Resources/Info.plist
+      properties:
+        NSLocationWhenInUseUsageDescription: "TravelMessageApp uses your location to tag messages and unlock geo-locked messages from friends."
+        NSPhotoLibraryUsageDescription: "TravelMessageApp uses your photo library to attach photos to messages."
+        NSCameraUsageDescription: "TravelMessageApp uses your camera to capture photos for messages."
     dependencies:
       - package: GoogleSignIn
         product: GoogleSignIn
@@ -35,7 +39,6 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.travelmessageapp.app
-        INFOPLIST_FILE: TravelMessageApp/Resources/Info.plist
 
   TravelMessageAppTests:
     type: bundle.unit-test

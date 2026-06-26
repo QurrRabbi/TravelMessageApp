@@ -14,13 +14,13 @@ final class AuthCoordinator {
     func start() async {
         let viewModel = AuthViewModel(authService: authService)
 
-        // Attempt to restore an existing session silently before showing login
-        await viewModel.restoreSession()
+        // Show login immediately so the window is visible on first frame,
+        // then silently attempt session restore in the background.
+        showLogin(viewModel: viewModel)
 
+        await viewModel.restoreSession()
         if case .authenticated(let user) = viewModel.state {
             showMainApp(for: user)
-        } else {
-            showLogin(viewModel: viewModel)
         }
     }
 

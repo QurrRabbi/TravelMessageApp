@@ -11,6 +11,8 @@
 		06B9055147883A8DFA7346FA /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2A3BD5F696558B199A208 /* EncryptionService.swift */; };
 		1FD6AA9C9A8A2F17439E886B /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBE346DF3D589E0F9391FB /* MessageRepository.swift */; };
 		2A1376FD75375997BDCAE205 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769D32C11782376D71ABAF /* Message.swift */; };
+		3BA52C26C925C381A1EBA351 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C25CE94DD029966025380 /* RootView.swift */; };
+		3D85BBAD48DC99DBD835CEB3 /* TravelMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC2325FB217E7446ABA1C3 /* TravelMessageApp.swift */; };
 		48C2EEC0F5547156CD073BD9 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B38E4FD62AF97A602068A /* Journey.swift */; };
 		6209279501448AFBDF71A9E9 /* EncryptionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B38529263B76E48088E083 /* EncryptionServiceTests.swift */; };
 		6433AD46DA9511FA17787423 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20026754AA56075446C853B4 /* AuthViewModel.swift */; };
@@ -51,7 +53,6 @@
 /* Begin PBXFileReference section */
 		00A447A64E6FD26C7FABB7E0 /* JourneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepository.swift; sourceTree = "<group>"; };
 		08052667B6FDD9A11248F839 /* JourneyRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepositoryTests.swift; sourceTree = "<group>"; };
-		13275D85AAD4FCA3D56319CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		177B38E4FD62AF97A602068A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		1F46705B7E5EB0F765BBDAE8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		20026754AA56075446C853B4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -64,7 +65,9 @@
 		6C7C24BF254B7C76B9C7696F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		70B38529263B76E48088E083 /* EncryptionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionServiceTests.swift; sourceTree = "<group>"; };
 		73E0771CF23B0BFB7B4CC8D5 /* MessageAccessIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAccessIntegrationTests.swift; sourceTree = "<group>"; };
+		93CC2325FB217E7446ABA1C3 /* TravelMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMessageApp.swift; sourceTree = "<group>"; };
 		AA81A6B60319E9CF6FC8E503 /* TravelMessageAppIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TravelMessageAppIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08C25CE94DD029966025380 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B7CBE3038439330C0EC4B949 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		BC49B9509F7C3D9AA1348E6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7896E839483BD9D19722053 /* TravelMessageApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TravelMessageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,14 +110,6 @@
 				300E468502541BFCE9BDD6CE /* TravelMessageAppTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		583506D01479C6CC1826793E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				13275D85AAD4FCA3D56319CA /* Info.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5B8948A52E9BC7A463A4E668 /* Map */ = {
@@ -270,7 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				5105510AAF7BDD230BB414C0 /* AppDelegate.swift */,
+				B08C25CE94DD029966025380 /* RootView.swift */,
 				2078DCA370D45FDB442F5056 /* SceneDelegate.swift */,
+				93CC2325FB217E7446ABA1C3 /* TravelMessageApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -305,7 +302,6 @@
 				DDDD7771A0682470980B9A25 /* App */,
 				A08EF7DCED25F74DBB3F00E3 /* Core */,
 				A937F83613C7214EB4BCD194 /* Features */,
-				583506D01479C6CC1826793E /* Resources */,
 			);
 			path = TravelMessageApp;
 			sourceTree = "<group>";
@@ -430,7 +426,9 @@
 				A757DCFAC786ECA75F89A61B /* LoginView.swift in Sources */,
 				2A1376FD75375997BDCAE205 /* Message.swift in Sources */,
 				1FD6AA9C9A8A2F17439E886B /* MessageRepository.swift in Sources */,
+				3BA52C26C925C381A1EBA351 /* RootView.swift in Sources */,
 				84473C3B9DE9E02333EA66EC /* SceneDelegate.swift in Sources */,
+				3D85BBAD48DC99DBD835CEB3 /* TravelMessageApp.swift in Sources */,
 				A823D400696BC859E088E996 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
